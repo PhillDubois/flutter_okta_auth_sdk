@@ -41,7 +41,7 @@ fun createConfig(arguments: Map<String, Any>, context: Context) {
         OktaClient.init(config, webClient, authClient)
         PendingOperation.success(true)
     } catch (ex: java.lang.Exception) {
-        PendingOperation.error(Errors.OKTA_OIDC_ERROR)
+        PendingOperation.error(Errors.OKTA_OIDC_ERROR, "$ex")
     }
 }
 

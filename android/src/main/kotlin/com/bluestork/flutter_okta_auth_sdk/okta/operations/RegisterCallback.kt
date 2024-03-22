@@ -60,7 +60,7 @@ fun registerCallback(activity: Activity) {
             //result[Constants.ERROR_CODE_KEY] = Errors.OKTA_OIDC_ERROR.errorMessage
             //result[Constants.ERROR_MSG_KEY] = msg
 
-            PendingOperation.error(Errors.OKTA_OIDC_ERROR, Errors.OKTA_OIDC_ERROR.errorMessage,msg)
+            PendingOperation.error(Errors.OKTA_OIDC_ERROR, Errors.OKTA_OIDC_ERROR.errorMessage,"$msg \n $exception")
         }
 
         override fun onCancel() {
