@@ -35,7 +35,7 @@ object PendingOperation {
         hasPendingOperation = false
         method = null
         result!!.error(
-                error.errorCode,
+                "${error.errorCode} ${error.errorMessage}",
                 message ?: error.errorMessage,
                 details)
     }
