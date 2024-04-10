@@ -5,7 +5,7 @@ import com.bluestork.flutter_okta_auth_sdk.okta.entities.PendingOperation
 
 fun clearTokens() {
     OktaClient.getWebClient().sessionClient.clear()
-    OktaClient.getAuthClient().sessionClient.clear()
+//    OktaClient.getAuthClient().sessionClient.clear()
 
     PendingOperation.success(true)
 }
